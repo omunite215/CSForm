@@ -1,5 +1,5 @@
 "use client";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -35,7 +35,22 @@ export default function Home() {
             </div>
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="password">Password</Label>
-              <Input name="password" type="password" placeholder="***********" />
+              <Input
+                name="password"
+                type="password"
+                placeholder="***********"
+              />
+              <Button variant="link">Reset Password</Button>
+            </div>
+            <div className="flex flex-col space-y-1.5">
+              <Label htmlFor="code">2 Factor Authentication Code</Label>
+              <Input
+                name="code"
+                type="number"
+                placeholder="****"
+                maxLength={4}
+              />
+              <Button variant="link">Resend Code</Button>
             </div>
           </div>
         </form>
