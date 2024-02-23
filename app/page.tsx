@@ -33,7 +33,7 @@ export default function Home() {
               <Label htmlFor="name">Email</Label>
               <Input id="name" placeholder="xyz@gmail.com" />
             </div>
-            <div className="flex flex-col space-y-1.5">
+            <div className="flex flex-col space-y-1.5 justify-start items-start">
               <Label htmlFor="password">Password</Label>
               <Input
                 name="password"
