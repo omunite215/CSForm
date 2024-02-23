@@ -42,7 +42,7 @@ export default function Home() {
               />
               <Button variant="link">Reset Password</Button>
             </div>
-            <div className="flex flex-col space-y-1.5">
+            <div className="flex flex-col space-y-1.5 justify-start items-start">
               <Label htmlFor="code">2 Factor Authentication Code</Label>
               <Input
                 name="code"
